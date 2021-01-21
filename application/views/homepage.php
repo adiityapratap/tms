@@ -14,7 +14,7 @@
 
 <div class="container">
   <br />
-  <span class="heading_image" align="center"></span>
+  <div class="heading_image" align="center"></div>
   <br />
   <div class="panel panel-default main_form_div" >
   

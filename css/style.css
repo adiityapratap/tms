@@ -10,6 +10,9 @@
 
   .heading_image{
     background-image: url('../images/title.png');
+        width: 700px;
+    height: 97px;
+    margin: 0 auto;
   }
   .task_listing {
     background-image: url('../images/note.png');
