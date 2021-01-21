@@ -18,9 +18,14 @@ class Homepage extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
+	 function __construct() {
+        parent::__construct();
+         $this->load->library('origami');
+         $this->load->helper('url');
+    }
+
 	public function index()
-	{    
-		$this->load->helper('url');
+	{           
 		$this->load->view('homepage');
 	}
 
@@ -28,6 +33,7 @@ class Homepage extends CI_Controller {
 	{  
 			
 	 $this->load->model('origami_model');
+	
      $form_data = array(); 
      $form_data[] = array( 
         "group_data_name" => "Task Data", 
@@ -39,6 +45,7 @@ class Homepage extends CI_Controller {
         ), 
         ), 
         ); 
+
 
      $this->origami_model->create("Task Data", $form_data);
 

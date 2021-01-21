@@ -1,11 +1,12 @@
 <?php
 
-class origami{
+class CI_Origami{
 
 private $username,$password,$account;
 
 public function set_connection($details = array())
-{
+{  
+
 	
 	if (!@$details["username"] || !@$details["password"] || !@$details["account"])
 		return array("error" => "missing details");
@@ -71,7 +72,7 @@ private function execute($module,$action,$data = null,$files_data = null)
 	$result = curl_exec($ch);
 	curl_close($ch);
 
-	
+	echo $result; exit;
 	if ($rs = json_decode($result,true))
 		return $rs;
 	else

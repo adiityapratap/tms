@@ -1,0 +1,78 @@
+::selection { background-color: #E13300; color: white; }
+  ::-moz-selection { background-color: #E13300; color: white; }
+
+  body {
+     background-image: url('../images/bg2.jpg');
+    margin: 40px;
+    font: 13px/20px normal Helvetica, Arial, sans-serif;
+    color: #4F5155;
+  }
+
+  .heading_image{
+    background-image: url('../images/title.png');
+  }
+  .task_listing {
+    background-image: url('../images/note.png');
+    height: 330px;
+    width: 250px;
+    margin: 6px;
+  }
+  .main_form_div{
+ 
+     width: 700px;
+     margin: 0 auto;
+  }
+
+  .inner_form_container{
+ background-image: url('../images/paper.png');
+    
+  }
+
+  .close {
+   
+      border-radius: 30px;
+    color: white;
+    cursor: pointer;
+    padding: 8px 14px;
+    transform: translate(0%, -50%);
+    font-size: 14px;
+    background-color: #292929;
+    margin-left: 215px;
+}
+.inner_content{
+    margin-top: -26px;
+    margin-left: 40px;
+    padding-top: 55px;
+    padding-right: 20px;
+}
+.inner_content b{ 
+  font-weight: 600;
+    font-size: 14px;
+}
+#task_list{
+   margin-top: 50px;
+   display: flex !important;
+   flex-wrap: wrap;
+}
+.form-group{
+      padding: 8px;
+}
+label{
+  display: inline-block;
+    width: 140px;
+    text-align: right;
+    font-size: 14px;
+    color: black;
+    font-weight: 600;
+}
+.form-group input{
+      width: 190px;
+}
+.close:hover {background: #bbb;}
+#save_task{
+      margin-left: 217px;
+    width: 105px;
+    height: 23px;
+    margin-top: 10px;
+}
+  }
